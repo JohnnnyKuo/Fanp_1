@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Ground
-  - Destroy
-  - Mirror
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -16,12 +13,12 @@ TagManager:
   - UI
   - 
   - 
-  - Blue
-  - Grappable
   - 
   - 
-  - 
-  - 
+  - Ground
+  - Player
+  - Moving Platform
+  - Wall
   - 
   - 
   - 
