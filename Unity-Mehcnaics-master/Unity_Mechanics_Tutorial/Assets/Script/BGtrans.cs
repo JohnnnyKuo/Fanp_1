@@ -8,12 +8,13 @@ public class BGtrans : MonoBehaviour
     [SerializeField] private Vector2 movingspeed;
     private Vector2 offset;
 
+    void Start()
+    {
+
+    }
     private void Awake()
     {
         mat = GetComponent<SpriteRenderer>().material;
-    }
-    void Start()
-    {
     }
 
     // Update is called once per frame
@@ -21,6 +22,6 @@ public class BGtrans : MonoBehaviour
     {
         offset = movingspeed * Time.deltaTime;
         mat.mainTextureOffset += offset;
-        
     }
+
 }
