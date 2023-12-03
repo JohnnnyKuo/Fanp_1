@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 00000000000000000000000000000000
+  productGUID: fe07f37dd49d2734f8205a92c3718e7e
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -796,7 +796,7 @@ PlayerSettings:
   cloudProjectId: a5320e26-b88f-44d6-af71-39b29081062b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: Unity_Mechanics_Tutorial
   organizationId: a0962001927
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
