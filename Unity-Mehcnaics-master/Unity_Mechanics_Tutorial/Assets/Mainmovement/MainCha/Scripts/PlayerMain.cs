@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UltimateCC
 {
-    public class PlayerMain : MonoBehaviour
+    public class PlayerMain : MonoBehaviour, IDataPersistence
     {
         private PlayerStateMachine _stateMachine; // State Machine declaration where we change current state
         [NonEditable, Space(5)] public AnimName CurrentState; // Variable to display the current state in the Unity inspector for debugging purposes.
@@ -69,6 +69,12 @@ namespace UltimateCC
         private void FixedUpdate()
         {
             _stateMachine.CurrentState.FixedUpdate(); // FixedUpdate method of current state at runtime
+        }
+        public  void LoadData(GameData data){
+            this.transform.position = data.playerPosition;
+        }
+        public void SaveData(ref GameData data){
+            data.playerPosition = this.transform.position;
         }
     }
 }
