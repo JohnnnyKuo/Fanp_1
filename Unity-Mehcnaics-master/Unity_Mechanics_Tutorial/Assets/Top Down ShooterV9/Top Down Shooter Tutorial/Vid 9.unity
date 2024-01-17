@@ -450,7 +450,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -574,8 +574,7 @@ MonoBehaviour:
   gun_holder: {fileID: 1923450759}
   fire_point: {fileID: 973682996}
   bullet: {fileID: 4058145024711711573, guid: b624901227c28154f8b5ef6ef40e7957, type: 3}
-  fireeffect: {fileID: 8194992990867289339, guid: 99bc28c0d45f51c4fbac01080b73edc7,
-    type: 3}
+  fireeffect: {fileID: 8194992990867289339, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
