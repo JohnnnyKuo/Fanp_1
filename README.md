@@ -22,9 +22,9 @@ Prettier-Code formatter
 "UniversalRenderPipelineGlobalSettings"。
 
 4.設定layer 看 "Layersetting"。
-![image](https://github.com/JohnnnyKuo/Fanp_1/blob/main/ToolBok/Layersetting.png)
-
 5.設定player physics 看 "playersetting"。
 ![image](https://github.com/JohnnnyKuo/Fanp_1/blob/main/ToolBok/Layersetting.png)
+![image](https://github.com/JohnnnyKuo/Fanp_1/blob/main/ToolBok/Layersetting.png)
 
-6. NaughtyAttributes
+6.新增NaughtyAttributes套件
+
