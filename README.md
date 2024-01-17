@@ -27,4 +27,5 @@ Prettier-Code formatter
 ![image](https://github.com/JohnnnyKuo/Fanp_1/blob/main/ToolBok/Layersetting.png)
 
 6.新增NaughtyAttributes套件
-
+7.新增Tag GravityAffect (給會受到重力影響之物件)
+8.新增Tag Projecter (給投射類像子彈)

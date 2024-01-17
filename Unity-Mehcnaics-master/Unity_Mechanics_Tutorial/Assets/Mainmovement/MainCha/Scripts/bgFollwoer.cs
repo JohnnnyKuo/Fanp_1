@@ -19,6 +19,4 @@ public class bgFollwoer : MonoBehaviour
             transform.position = newPosition;
         }
     }
-    // Update is called once per frame
-    
 }

@@ -23,10 +23,23 @@ public class Bullet_Tutorial : MonoBehaviour
     private void FixedUpdate()
     {
         bullet_rigidbody.MovePosition(transform.position + transform.right * bullet_speed * Time.fixedDeltaTime);
-    }
 
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Invoke("DestroyBullet", 0.05f);
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "GravityAffect")
+        {
+            Destroy(this.gameObject);
+        }
+    }
     void DestroyBullet() 
     {
         Destroy(gameObject);
     }
 }
+

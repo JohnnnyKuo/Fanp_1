@@ -28,7 +28,7 @@ namespace Taichi.Soft2D.Plugin
             string filePath = absolutePath.Substring(0, assetsFolderIndex);
             return filePath;
 #endif
-            return string.Empty;
+            //return string.Empty;
         }
     }
 }
