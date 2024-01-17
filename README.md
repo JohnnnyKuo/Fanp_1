@@ -22,7 +22,9 @@ Prettier-Code formatter
 "UniversalRenderPipelineGlobalSettings"。
 
 4.設定layer 看 "Layersetting"。
+![image](picture or gif url)
 
 5.設定player physics 看 "playersetting"。
+![image](picture or gif url)
 
 6. NaughtyAttributes
