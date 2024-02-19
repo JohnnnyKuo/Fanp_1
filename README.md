@@ -29,3 +29,4 @@ Prettier-Code formatter
 6.新增NaughtyAttributes套件
 7.新增Tag GravityAffect (給會受到重力影響之物件)
 8.新增Tag Projecter (給投射類像子彈)
+9.新增視差paralax 遠景->腳色地面->近景(參數調整為0.5->0->-0.5)共能分10檔位
