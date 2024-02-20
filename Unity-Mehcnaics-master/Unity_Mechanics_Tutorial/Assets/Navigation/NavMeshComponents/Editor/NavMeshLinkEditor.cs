@@ -25,7 +25,6 @@ namespace NavMeshPlus.Editors.Components
         static Color s_HandleColor = new Color(255f, 167f, 39f, 210f) / 255;
         static Color s_HandleColorDisabled = new Color(255f * 0.75f, 167f * 0.75f, 39f * 0.75f, 100f) / 255;
 
-        [System.Obsolete]
         void OnEnable()
         {
             m_AgentTypeID = serializedObject.FindProperty("m_AgentTypeID");
@@ -43,7 +42,6 @@ namespace NavMeshPlus.Editors.Components
             NavMeshVisualizationSettings.showNavigation++;
         }
 
-        [System.Obsolete]
         void OnDisable()
         {
             NavMeshVisualizationSettings.showNavigation--;
@@ -164,7 +162,6 @@ namespace NavMeshPlus.Editors.Components
         }
 
         [DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)]
-        [System.Obsolete]
         static void RenderBoxGizmoNotSelected(NavMeshLink navLink, GizmoType gizmoType)
         {
             if (NavMeshVisualizationSettings.showNavigation > 0)
