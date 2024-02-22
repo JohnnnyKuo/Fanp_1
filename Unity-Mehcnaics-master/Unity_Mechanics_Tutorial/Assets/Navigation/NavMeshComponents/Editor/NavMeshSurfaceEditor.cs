@@ -59,6 +59,7 @@ namespace NavMeshPlus.Editors.Components
             get { return EditMode.editMode == EditMode.SceneViewEditMode.Collider && EditMode.IsOwner(this); }
         }
 
+        [System.Obsolete]
         void OnEnable()
         {
             m_AgentTypeID = serializedObject.FindProperty("m_AgentTypeID");
@@ -80,6 +81,7 @@ namespace NavMeshPlus.Editors.Components
             NavMeshVisualizationSettings.showNavigation++;
         }
 
+        [System.Obsolete]
         void OnDisable()
         {
             NavMeshVisualizationSettings.showNavigation--;
@@ -309,6 +311,7 @@ namespace NavMeshPlus.Editors.Components
         }
 
         [DrawGizmo(GizmoType.NotInSelectionHierarchy | GizmoType.Pickable)]
+        [System.Obsolete]
         static void RenderBoxGizmoNotSelected(NavMeshSurface navSurface, GizmoType gizmoType)
         {
             if (NavMeshVisualizationSettings.showNavigation > 0)
