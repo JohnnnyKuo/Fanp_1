@@ -15,6 +15,7 @@ namespace NavMeshPlus.Editors.Components
         SerializedProperty m_IgnoreFromBuild;
         SerializedProperty m_OverrideArea;
 
+        [System.Obsolete]
         void OnEnable()
         {
             m_AffectedAgents = serializedObject.FindProperty("m_AffectedAgents");
@@ -25,6 +26,7 @@ namespace NavMeshPlus.Editors.Components
             NavMeshVisualizationSettings.showNavigation++;
         }
 
+        [System.Obsolete]
         void OnDisable()
         {
             NavMeshVisualizationSettings.showNavigation--;
