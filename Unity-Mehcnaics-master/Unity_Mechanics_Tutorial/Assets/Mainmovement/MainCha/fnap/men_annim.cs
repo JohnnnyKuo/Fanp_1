@@ -15,6 +15,7 @@ public class men_annim : MonoBehaviour
     void Update()
     {
         ani.SetBool("IsRunning",false);
+        ani.SetBool("IsDying",false);
         if (Input.GetKey (KeyCode.A)){
             ani.SetBool("IsRunning",true);
         }
@@ -28,11 +29,38 @@ public class men_annim : MonoBehaviour
         {
             ani.SetBool("IsJumping",true);
         }
- 
- 
+    if (Input.GetKeyDown(KeyCode.X)) 
+        {
+            ani.SetBool("IsDying",true);
+        }
  
     }
     private void OnTriggerEnter2D(Collider2D other) {
-                ani.SetBool("IsJumping",false);
+        //ani.SetBool("IsJumping",false);
+        //TAG要設ground才會停止跳躍動畫
+        if(other.CompareTag("Ground"))
+        {
+            ani.SetBool("IsJumping",false);
+        }   
+                    
+        if(other.CompareTag("swing"))
+        {
+            ani.SetBool("IsJumping",false);
+            ani.SetBool("IsSwing",true);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D other) {
+        if(other.CompareTag("swing"))
+        {
+            ani.SetBool("IsJumping",false);
+            ani.SetBool("IsSwing",true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other) {
+        if(other.CompareTag("swing"))
+        {
+            ani.SetBool("IsSwing",false);
+        }
     }
 }
