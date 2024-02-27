@@ -8,6 +8,9 @@ TagManager:
   - GravityAffect
   - Projecter
   - Static
+  - swing
+  - Ground
+  - padAffect
   layers:
   - Default
   - TransparentFX
