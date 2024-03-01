@@ -77,10 +77,10 @@ namespace UltimateCC
             {
                 stateMachine.ChangeState(player.LandState);
             }
-            else if (inputManager.Input_Dash && playerData.Dash.DashCooldownTimer <= 0f)
+            /*else if (inputManager.Input_Dash && playerData.Dash.DashCooldownTimer <= 0f)
             {
                 stateMachine.ChangeState(player.DashState);
-            }
+            }*/
             else if (playerData.Physics.IsNextToWall && inputManager.Input_WallGrab && playerData.Walls.CurrentStamina > 0)
             {
                 stateMachine.ChangeState(player.WallGrabState);

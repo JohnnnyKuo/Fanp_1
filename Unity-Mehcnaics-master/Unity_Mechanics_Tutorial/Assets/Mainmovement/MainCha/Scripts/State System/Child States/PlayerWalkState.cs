@@ -63,10 +63,10 @@ namespace UltimateCC
             {
                 stateMachine.ChangeState(player.LandState);
             }
-            else if (inputManager.Input_Dash && playerData.Dash.DashCooldownTimer <= 0f)
+           /* else if (inputManager.Input_Dash && playerData.Dash.DashCooldownTimer <= 0f)
             {
                 stateMachine.ChangeState(player.DashState);
-            }
+            }*/
             else if (inputManager.Input_Crouch)
             {
                 stateMachine.ChangeState(player.CrouchIdleState);

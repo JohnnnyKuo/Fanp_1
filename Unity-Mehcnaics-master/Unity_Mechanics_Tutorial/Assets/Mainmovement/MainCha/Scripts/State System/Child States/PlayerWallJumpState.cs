@@ -65,10 +65,10 @@ namespace UltimateCC
             {
                 stateMachine.ChangeState(player.LandState);
             }
-            else if (inputManager.Input_Dash && playerData.Dash.DashCooldownTimer <= 0f)
+           /* else if (inputManager.Input_Dash && playerData.Dash.DashCooldownTimer <= 0f)
             {
                 stateMachine.ChangeState(player.DashState);
-            }
+            }*/
         }
 
         public void Move2D()

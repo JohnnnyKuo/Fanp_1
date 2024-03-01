@@ -79,7 +79,7 @@ namespace UltimateCC
             playerData.Physics.LocalVelocity = rigidbody2D.velocity - playerData.Physics.Platform.DampedVelocity;
             if (player.CurrentState == PlayerMain.AnimName.Jump
                 || player.CurrentState == PlayerMain.AnimName.Land
-                || player.CurrentState == PlayerMain.AnimName.Dash
+                //|| player.CurrentState == PlayerMain.AnimName.Dash
                 || player.CurrentState == PlayerMain.AnimName.WallJump)
             {
                 if (localTime > playerData.Jump.CoyoteTimeTimer && playerData.Jump.NextJumpInt == 1)
