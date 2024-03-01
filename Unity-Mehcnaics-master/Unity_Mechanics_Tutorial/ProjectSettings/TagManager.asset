@@ -8,6 +8,7 @@ TagManager:
   - GravityAffect
   - Projecter
   - Static
+  - Ground
   layers:
   - Default
   - TransparentFX

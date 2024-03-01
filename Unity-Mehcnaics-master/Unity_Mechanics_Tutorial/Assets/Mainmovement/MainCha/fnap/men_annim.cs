@@ -43,24 +43,24 @@ public class men_annim : MonoBehaviour
             ani.SetBool("IsJumping",false);
         }   
                     
-        if(other.CompareTag("swing"))
+        /*if(other.CompareTag("swing"))
         {
             ani.SetBool("IsJumping",false);
             ani.SetBool("IsSwing",true);
-        }
+        }*/
     }
 
     private void OnTriggerStay2D(Collider2D other) {
-        if(other.CompareTag("swing"))
+        /*if(other.CompareTag("swing"))
         {
             ani.SetBool("IsJumping",false);
             ani.SetBool("IsSwing",true);
-        }
+        }*/
     }
     private void OnTriggerExit2D(Collider2D other) {
-        if(other.CompareTag("swing"))
+       /* if(other.CompareTag("swing"))
         {
             ani.SetBool("IsSwing",false);
-        }
+        }*/
     }
 }
