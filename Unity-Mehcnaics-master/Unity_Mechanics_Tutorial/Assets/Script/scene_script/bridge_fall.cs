@@ -17,6 +17,7 @@ public class bridge_fall : MonoBehaviour
     void Update()
     {
         booltrue();
+        stop();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,7 +33,7 @@ public class bridge_fall : MonoBehaviour
         }
     }
     public void stop(){
-        if(bridge.transform.position.y==-10){
+        if(bridge.transform.position.y==-8){
             bridge.SetActive(false);
             Bridge_fall_control.SetActive(false);
         }

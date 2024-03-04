@@ -8,8 +8,8 @@ TagManager:
   - GravityAffect
   - Projecter
   - Static
-  - swing
   - Ground
+  - swing
   - padAffect
   layers:
   - Default

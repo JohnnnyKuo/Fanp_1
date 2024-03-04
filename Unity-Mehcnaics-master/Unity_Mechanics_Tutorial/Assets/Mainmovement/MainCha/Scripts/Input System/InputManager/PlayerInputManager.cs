@@ -14,7 +14,7 @@ namespace UltimateCC
         // Variables to store input
         [SerializeField, NonEditable] private float input_Walk;
         [SerializeField, NonEditable] private bool input_Jump;
-        [SerializeField, NonEditable] private bool input_Dash;
+        //[SerializeField, NonEditable] private bool input_Dash;
         [SerializeField, NonEditable] private bool input_Crouch;
         [SerializeField, NonEditable] private bool input_WallGrab;
         [SerializeField, NonEditable] private float input_WallClimb;
@@ -22,7 +22,7 @@ namespace UltimateCC
         // Properties to access the input variables
         public float Input_Walk => input_Walk;
         public bool Input_Jump => input_Jump;
-        public bool Input_Dash => input_Dash;
+        //public bool Input_Dash => input_Dash;
         public bool Input_Crouch => input_Crouch;
         public bool Input_WallGrab => input_WallGrab;
         public float Input_WallClimb => input_WallClimb;
@@ -50,8 +50,8 @@ namespace UltimateCC
             playerControls.Player.Jump.canceled += OnJumpCanceled;
             playerControls.Player.Walk.performed += OnWalk;
             playerControls.Player.Walk.canceled += OnWalk;
-            playerControls.Player.Dash.performed += OnDash;
-            playerControls.Player.Dash.canceled += OnDash;
+            //playerControls.Player.Dash.performed += OnDash;
+            //playerControls.Player.Dash.canceled += OnDash;
             playerControls.Player.Crouch.performed += OnCrouch;
             playerControls.Player.Crouch.canceled += OnCrouch;
             playerControls.Player.WallGrab.performed += OnWallGrab;
@@ -89,7 +89,7 @@ namespace UltimateCC
 
             playerData.Jump.JumpBufferTimer = playerData.Jump.JumpBufferTimer > 0f ? playerData.Jump.JumpBufferTimer - Time.deltaTime : 0f;
             playerData.Jump.CoyoteTimeTimer = playerData.Jump.CoyoteTimeTimer > 0f ? playerData.Jump.CoyoteTimeTimer - Time.deltaTime : 0f;
-            playerData.Dash.DashCooldownTimer = playerData.Dash.DashCooldownTimer > 0f ? playerData.Dash.DashCooldownTimer - Time.deltaTime : 0f;
+            //playerData.Dash.DashCooldownTimer = playerData.Dash.DashCooldownTimer > 0f ? playerData.Dash.DashCooldownTimer - Time.deltaTime : 0f;
             playerData.Walls.WallJump.JumpBufferTimer = playerData.Walls.WallJump.JumpBufferTimer > 0f ? playerData.Walls.WallJump.JumpBufferTimer - Time.deltaTime : 0f;
             playerData.Walls.WallJump.CoyoteTimeTimer = playerData.Walls.WallJump.CoyoteTimeTimer > 0f ? playerData.Walls.WallJump.CoyoteTimeTimer - Time.deltaTime : 0f;
         }
@@ -121,10 +121,10 @@ namespace UltimateCC
             input_Walk = context.ReadValue<float>();
         }
 
-        private void OnDash(InputAction.CallbackContext context)
+        /*private void OnDash(InputAction.CallbackContext context)
         {
             input_Dash = context.ReadValueAsButton();
-        }
+        }*/
 
         private void OnCrouch(InputAction.CallbackContext context)
         {
