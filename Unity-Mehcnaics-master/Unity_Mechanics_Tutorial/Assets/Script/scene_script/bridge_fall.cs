@@ -25,7 +25,7 @@ public class bridge_fall : MonoBehaviour
         fall=true;
     }
     public void Bridge_Fall(){
-        bridge.transform.Translate(0,-0.01f,0);
+        bridge.transform.Translate(0,-0.04f,0);
     }
     public void booltrue(){
         if(fall==true){
@@ -33,7 +33,7 @@ public class bridge_fall : MonoBehaviour
         }
     }
     public void stop(){
-        if(bridge.transform.position.y==-8){
+        if(bridge.transform.position.y<=-8){
             bridge.SetActive(false);
             Bridge_fall_control.SetActive(false);
         }

@@ -24,5 +24,4 @@ public class modFollow : MonoBehaviour
             transform.position = newPosition;
         }
     }
-
 }

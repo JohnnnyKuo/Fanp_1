@@ -18,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Leak
+  - Mod
   - Soft2D
   - 
   - Ground
@@ -45,6 +45,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Rope
+    uniqueID: 231036335
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

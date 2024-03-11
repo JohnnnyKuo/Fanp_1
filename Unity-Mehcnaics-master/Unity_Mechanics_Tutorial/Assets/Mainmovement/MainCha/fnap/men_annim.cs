@@ -16,6 +16,11 @@ public class men_annim : MonoBehaviour
     {
         ani.SetBool("IsRunning",false);
         ani.SetBool("IsDying",false);
+        Keypress_Anim();
+    }
+
+    public void Keypress_Anim()
+    {
         if (Input.GetKey (KeyCode.A)){
             ani.SetBool("IsRunning",true);
         }
@@ -33,8 +38,8 @@ public class men_annim : MonoBehaviour
         {
             ani.SetBool("IsDying",true);
         }
- 
     }
+
     private void OnTriggerEnter2D(Collider2D other) {
         //ani.SetBool("IsJumping",false);
         //TAG要設ground才會停止跳躍動畫

@@ -28,7 +28,10 @@ public class teleport : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag=="Player"){
-           Tele(); 
+           lagtele(); 
         }
+    }
+    public void lagtele(){
+        Invoke("Tele",0.9f);
     }
 }

@@ -7,6 +7,7 @@ public class behind_py_sc3_trapmove : MonoBehaviour
     public GameObject trapT,trapL,trapR;
     public GameObject trap_controll;
 
+    public float trapl,trapr,trapt;
     public bool trapmoving=false;
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,9 @@ public class behind_py_sc3_trapmove : MonoBehaviour
     }
     
     public void trap_fall(){
-        trapT.transform.Translate(0,-0.04f,0);
-        trapR.transform.Translate(-0.04f,0,0);
-        trapL.transform.Translate(0.04f,0,0);
+        trapT.transform.Translate(0,-trapt,0);
+        trapR.transform.Translate(-trapr,0,0);
+        trapL.transform.Translate(trapl,0,0);
     }
     /// <summary>
     /// Sent when another object enters a trigger collider attached to this
