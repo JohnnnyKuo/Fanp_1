@@ -15,7 +15,8 @@ public class GrappleIOC : MonoBehaviour
         if(other.CompareTag("Ground"))
         {
             scriptToControl.enabled = true;
-            rb.mass=50f;
+            rb.mass=5f;
+            rb.velocity = new Vector2(0f, 0f);
         }
     }
 
@@ -24,7 +25,7 @@ public class GrappleIOC : MonoBehaviour
         if(other.CompareTag("Ground"))
         {
             scriptToControl.enabled = false;
-            rb.mass=150f;
+            rb.mass=80f;
         }
     }
 
@@ -33,7 +34,7 @@ public class GrappleIOC : MonoBehaviour
         if(other.CompareTag("Ground"))
         {
             scriptToControl.enabled = true;
-            rb.mass=50f;
+            rb.mass=5f;
         }
     }
     
